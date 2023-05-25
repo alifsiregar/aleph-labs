@@ -1,0 +1,145 @@
+/* global styling */
+html,
+body {
+    margin: 20px;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* styling jawaban no 1 */
+div.container-1 {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 450px;
+    height: 250px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0;
+    margin-bottom: 48px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: gap 0.75s;
+}
+
+div.container-1 span.title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+div.container-1 div.sliding-content {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+div.container-1 div.sliding-content span.subtitle {
+    font-size: 16px;
+}
+
+div.container-1:hover {
+    gap: 12px;
+    transition: gap 0.75s;
+}
+
+div.container-1:hover div.sliding-content {
+    height: 60px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.75s;
+}
+
+/* styling jawaban no 2 */
+div.container-2 {
+    background: black;
+    color: white;
+    width: 450px;
+    height: 250px;
+    padding: 1.5rem;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-2 div.dropdown {
+    position: relative;
+}
+
+div.container-2 div.dropdown span.title {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+div.container-2 div.dropdown div.menu {
+    padding: 12px;
+    background: white;
+    color: black;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    top: 28px;
+    border-radius: 8px;
+    display: none;
+    z-index: 1;
+    transition: all 0.75s;
+}
+
+div.container-2 div.dropdown div.menu ul li {
+    margin-bottom: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+div.container-2 div.dropdown div.menu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+div.container-2 div.dropdown:hover div.menu {
+    display: block;
+    transition: all 0.75s;
+}
+
+/* styling jawaban no 3 */
+div.container-3 {
+    width: 450px;
+    height: 250px;
+    padding: 1.5rem;
+    margin-bottom: 48px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+div.container-3 span.title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.container-3 ul li{
+    font-size: 16px;
+    padding: 3px 0 3px 0;
+}
+
+div.container-3 ul li:nth-child(odd){
+    background-color: #dddddd;
+}
